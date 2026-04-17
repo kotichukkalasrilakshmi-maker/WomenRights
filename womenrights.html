@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Girls Rights Awareness</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+    background: #ff4d6d;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    min-height: 100vh;
+    padding: 50px;
+    color: white;
+}
+
+/* Backgrounds */
+#rights { background: linear-gradient(to right, #ff758c, #ff7eb3); }
+#rules { background: linear-gradient(to right, #6a11cb, #2575fc); }
+
+/* Box */
+.box {
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 15px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn:hover {
+    background: yellow;
+}
+
+/* Gallery */
+.gallery img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Form */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+}
+input[type="submit"] {
+    background: yellow;
+    font-weight: bold;
+}
+
+/* Animation */
+.fade {
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+</style>
+
+<script>
+function showHelp() {
+    alert("Emergency Help:\nWomen Helpline: 1091\nEmergency: 112");
+}
+
+function submitForm() {
+    alert("Your complaint has been submitted successfully!");
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>
+    <a href="#rights">Girls Rights</a>
+    <a href="#rules">File a Case</a>
+</nav>
+
+<!-- FIRST PAGE -->
+<section id="rights" class="fade">
+    <h1>Girls Rights</h1>
+
+    <!-- Rights with Description -->
+    <div class="box">
+        <h2>Girls Rights with Description</h2>
+        <ul>
+            <li><b>Right to Education:</b> Every girl has the right to receive free and quality education without discrimination. Education helps girls become independent and confident.</li><br>
+
+            <li><b>Right to Equality:</b> Girls must be treated equally as boys in all areas like education, jobs, and opportunities without any discrimination.</li><br>
+
+            <li><b>Right to Safety and Protection:</b> Girls have the right to live safely without fear of violence, harassment, or abuse at home, school, or workplace.</li><br>
+
+            <li><b>Right to Freedom:</b> Every girl has the freedom to express her thoughts, choose her career, and live her life with dignity.</li><br>
+
+            <li><b>Right against Child Marriage:</b> Girls have the legal right to refuse early marriage and continue their education and personal growth.</li><br>
+
+            <li><b>Right against Violence:</b> Girls are protected by law from domestic violence, physical abuse, and mental harassment.</li><br>
+
+            <li><b>Right to Work and Equal Pay:</b> Women and girls have the right to work and receive equal wages as men for the same work.</li>
+        </ul>
+    </div>
+
+    <!-- Laws Section -->
+    <div class="box">
+        <h2>Important Laws in India</h2>
+        <ul>
+            <li>Protection of Women from Domestic Violence Act (2005)</li>
+            <li>Prohibition of Child Marriage Act (2006)</li>
+            <li>Sexual Harassment at Workplace Act (2013)</li>
+        </ul>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="box gallery">
+        <h2>Awareness Gallery</h2>
+       <a href="pic1.jpg">
+        <img src="pic1.jpg"
+    </div>
+
+    <button class="btn" onclick="showHelp()">Emergency Help</button>
+    <a href="#rules" class="btn">Next →</a>
+</section>
+
+<!-- SECOND PAGE -->
+<section id="rules" class="fade">
+    <h1>How to File a Case</h1>
+
+    <div class="box">
+        <ol>
+            <li>Go to nearest police station</li>
+            <li>File FIR</li>
+            <li>Explain the issue clearly</li>
+            <li>Submit evidence</li>
+            <li>Call helpline 1091</li>
+        </ol>
+    </div>
+
+    <!-- Complaint Form -->
+    <div class="box">
+        <h2>Report Complaint</h2>
+        <form onsubmit="submitForm(); return false;">
+            <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="Location" required>
+            <textarea placeholder="Describe your issue" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <a href="#rights" class="btn">← Back</a>
+</section>
+
+</body>
+</html>
